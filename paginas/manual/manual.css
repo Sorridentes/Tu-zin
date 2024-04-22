@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap');
+
+.footer{
+    position: absolute;
+    top: 700px;
+    right: 0;
+    left: 0;
+    bottom: 0 
+}
+.footer .container{
+    min-width: 100%;
+}
+@media only screen and (max-width: 767px){
+    .footer{
+        margin-top: 25%;
+    }
+}
+
+.col p, .col a{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.col h5{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.flutuante{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-float{
+    /* margin-top: 200px; */
+    animation: flutuar 3s ease-in-out infinite;
+    }
+.img-float img{
+    max-height: 300px;
+}
+.sombra{
+    background: #444;
+    width: 140px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 9px #444;
+    animation: crescer 3s ease-in-out infinite;
+}
+
+@keyframes crescer {
+    0%, 100%{
+        scale: 1;
+    }
+    50%{
+        scale: 0.8;
+    }
+}
+
+@keyframes flutuar{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}

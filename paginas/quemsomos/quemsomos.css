@@ -1,0 +1,44 @@
+.cartao{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 17rem;
+    margin-top: 3%;
+    position: relative;
+    border: solid #a200ff;
+    border-radius: 5%;
+    transition: 0.5s;
+}
+.cartao:hover{
+    height: 350px;
+}
+.cara{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+.img-box{
+  top: 0px;
+  transition: 0.72s;
+}
+.cartao .img-box img{
+  object-fit: cover;
+}
+.cartao:hover .img-box{
+  top: -100px;
+  scale: 0.75;
+}
+
+.cartao .txt-box{
+    top: 265px;
+    gap: 10px;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.75s;
+}
+
+.cartao:hover .txt-box{
+    top: 130px;
+    height: 180px;
+}

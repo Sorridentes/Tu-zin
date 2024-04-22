@@ -1,0 +1,13 @@
+body{
+    background-image: url("../../imagens/fundoForm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section .container:first-child{
+    backdrop-filter: blur(6px);
+    box-shadow: 5px 5px 10px 0 rgb(0, 0, 0, 0.5);
+}
+
+section .form-control::placeholder{
+    color: rgb(255, 255, 255, 0.5);
+}
