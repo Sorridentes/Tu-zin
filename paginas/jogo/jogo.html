@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo</title>
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg" style="background-color: #b945fc;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html"><img src="../../imagens/logo.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../quemsomos/quemsomos.html">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../manual/manual.html">Manual de Instrução</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../trabalheconosco/trabalheconosco.html">Trabalhe conosco</a>
+                </li>
+                <li>
+                  <a class="nav-link active" href="../formulario/formulario.html">Formulario</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+  <section id="jogo" class="position-relative" style="font-size: 25px;">
+    <div class="row flex-column justify-content-center border border-5 border-dark-subtle rounded m-3 pt-1" style="height: 80vh;">
+        <div class="col-md-auto" style="max-height: 71px;">
+            <div class="d-flex align-items-center justify-content-between w-100 p-0">
+                <div class="col-auto p-0 vida">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="130px" height="25px"
+                        viewBox="0 0 1080 200">
+                        <defs>
+                            <linearGradient id="g1" x1="0%" x2="100%" y2="0%">
+                                <stop offset="1" stop-color="red"/>
+                                <stop offset="0" stop-color="transparent"/>  
+                            </linearGradient>
+                        </defs>
+                        <path id="barHeart"
+                                fill="url(#g1)" stroke="black" stroke-width="10"
+                                d="M 108.00,18.00
+                            C 112.62,12.77 118.72,8.78 125.00,5.78
+                                151.40,-6.82 183.49,1.11 201.48,24.00
+                                212.65,38.20 214.20,50.73 214.00,68.00
+                                213.67,95.68 188.00,116.00 170.00,134.00
+                                170.00,134.00 125.01,178.91 125.01,178.91
+                                122.06,181.73 110.95,193.73 108.00,194.19
+                                105.17,194.62 98.60,186.98 96.42,184.87
+                                96.42,184.87 64.87,153.37 64.87,153.37
+                                64.87,153.37 34.72,123.42 34.72,123.42
+                                22.88,111.82 10.66,100.84 4.46,85.00
+                                0.50,74.88 0.88,67.53 1.00,57.00
+                                1.08,50.90 2.07,47.71 4.00,42.00
+                                12.20,17.80 35.26,0.30 61.00,0.00
+                                81.53,-0.24 92.32,5.27 108.00,18.00 Z
+                            M 270.00,0.44
+                            C 282.19,-1.12 294.75,0.24 306.00,5.31
+                                306.00,5.31 324.00,15.42 324.00,15.42
+                                326.70,15.48 330.70,11.90 333.00,10.36
+                                337.77,7.17 342.53,4.77 348.00,3.03
+                                374.09,-5.27 402.66,2.70 419.24,25.00
+                                422.94,29.97 426.08,36.15 428.14,42.00
+                                434.42,59.92 431.36,82.24 420.90,98.00
+                                415.61,105.97 402.14,118.86 395.00,126.00
+                                395.00,126.00 365.00,156.00 365.00,156.00
+                                365.00,156.00 336.00,185.00 336.00,185.00
+                                333.51,187.49 327.62,194.24 324.17,194.43
+                                321.14,194.60 314.63,187.13 312.37,184.87
+                                312.37,184.87 281.54,154.12 281.54,154.12
+                                281.54,154.12 249.00,122.00 249.00,122.00
+                                237.69,110.69 228.00,101.94 221.31,87.00
+                                216.54,76.35 216.87,68.26 217.00,57.00
+                                217.08,50.67 218.28,46.91 220.34,41.00
+                                228.27,18.33 246.93,4.70 270.00,0.44 Z
+                            M 486.00,0.44
+                            C 498.19,-1.12 510.75,0.24 522.00,5.31
+                                522.00,5.31 540.00,15.42 540.00,15.42
+                                542.70,15.48 546.70,11.90 549.00,10.36
+                                553.77,7.17 558.53,4.77 564.00,3.03
+                                590.09,-5.27 618.66,2.70 635.24,25.00
+                                638.94,29.97 642.08,36.15 644.14,42.00
+                                650.42,59.92 647.36,82.24 636.90,98.00
+                                631.61,105.97 618.14,118.86 611.00,126.00
+                                611.00,126.00 581.00,156.00 581.00,156.00
+                                581.00,156.00 552.00,185.00 552.00,185.00
+                                549.51,187.49 543.62,194.24 540.17,194.43
+                                537.14,194.60 530.63,187.13 528.37,184.87
+                                528.37,184.87 497.54,154.12 497.54,154.12
+                                497.54,154.12 465.00,122.00 465.00,122.00
+                                453.69,110.69 444.00,101.94 437.31,87.00
+                                432.54,76.35 432.87,68.26 433.00,57.00
+                                433.08,50.67 434.28,46.91 436.34,41.00
+                                444.27,18.33 462.93,4.70 486.00,0.44 Z
+                            M 702.00,0.44
+                            C 714.19,-1.12 726.75,0.24 738.00,5.31
+                                738.00,5.31 756.00,15.42 756.00,15.42
+                                758.70,15.48 762.70,11.90 765.00,10.36
+                                769.77,7.17 774.53,4.77 780.00,3.03
+                                806.09,-5.27 834.66,2.70 851.24,25.00
+                                854.94,29.97 858.08,36.15 860.14,42.00
+                                866.42,59.92 863.36,82.24 852.90,98.00
+                                847.61,105.97 834.14,118.86 827.00,126.00
+                                827.00,126.00 797.00,156.00 797.00,156.00
+                                797.00,156.00 768.00,185.00 768.00,185.00
+                                765.51,187.49 759.62,194.24 756.17,194.43
+                                753.14,194.60 746.63,187.13 744.37,184.87
+                                744.37,184.87 713.54,154.12 713.54,154.12
+                                713.54,154.12 681.00,122.00 681.00,122.00
+                                669.69,110.69 660.00,101.94 653.31,87.00
+                                648.54,76.35 648.87,68.26 649.00,57.00
+                                649.08,50.67 650.28,46.91 652.34,41.00
+                                660.27,18.33 678.93,4.70 702.00,0.44 Z
+                            M 973.00,18.00
+                            C 977.62,12.77 983.72,8.78 990.00,5.78
+                                1016.40,-6.82 1048.49,1.11 1066.48,24.00
+                                1077.65,38.20 1079.20,50.73 1079.00,68.00
+                                1078.67,95.68 1053.00,116.00 1035.00,134.00
+                                1035.00,134.00 990.01,178.91 990.01,178.91
+                                987.06,181.73 975.95,193.73 973.00,194.19
+                                970.17,194.62 963.60,186.98 961.42,184.87
+                                961.42,184.87 929.87,153.37 929.87,153.37
+                                929.87,153.37 899.72,123.42 899.72,123.42
+                                887.88,111.82 875.66,100.84 869.46,85.00
+                                865.50,74.88 865.88,67.53 866.00,57.00
+                                866.08,50.90 867.07,47.71 869.00,42.00
+                                877.20,17.80 900.26,0.30 926.00,0.00
+                                946.53,-0.24 957.32,5.27 973.00,18.00 Z" />
+                    </svg>
+                    <span id="vida1">100</span>%
+                </div>
+                <div class="col text-center">
+                    <h4 class="fs-5" style="font-family: 'Josefin Slab', serif;font-weight: 600;">COLISÕES</h4>
+                    <span class="fs-3" id="colisao">0</span>
+                </div>
+                <div class="col-auto p-0 vida">
+                    <span id="vida2">100</span>%
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                    width="130px" height="25px"
+                    viewBox="0 0 1080 200">
+                    <defs>
+                        <linearGradient id="g2" x1="0%" x2="100%" y2="0%">
+                            <stop offset="1" stop-color="red"/>
+                            <stop offset="0" stop-color="transparent"/>  
+                        </linearGradient>
+                    </defs>
+                    <path id="barHeart"
+                            fill="url(#g2)" stroke="black" stroke-width="10"
+                            d="M 108.00,18.00
+                        C 112.62,12.77 118.72,8.78 125.00,5.78
+                            151.40,-6.82 183.49,1.11 201.48,24.00
+                            212.65,38.20 214.20,50.73 214.00,68.00
+                            213.67,95.68 188.00,116.00 170.00,134.00
+                            170.00,134.00 125.01,178.91 125.01,178.91
+                            122.06,181.73 110.95,193.73 108.00,194.19
+                            105.17,194.62 98.60,186.98 96.42,184.87
+                            96.42,184.87 64.87,153.37 64.87,153.37
+                            64.87,153.37 34.72,123.42 34.72,123.42
+                            22.88,111.82 10.66,100.84 4.46,85.00
+                            0.50,74.88 0.88,67.53 1.00,57.00
+                            1.08,50.90 2.07,47.71 4.00,42.00
+                            12.20,17.80 35.26,0.30 61.00,0.00
+                            81.53,-0.24 92.32,5.27 108.00,18.00 Z
+                        M 270.00,0.44
+                        C 282.19,-1.12 294.75,0.24 306.00,5.31
+                            306.00,5.31 324.00,15.42 324.00,15.42
+                            326.70,15.48 330.70,11.90 333.00,10.36
+                            337.77,7.17 342.53,4.77 348.00,3.03
+                            374.09,-5.27 402.66,2.70 419.24,25.00
+                            422.94,29.97 426.08,36.15 428.14,42.00
+                            434.42,59.92 431.36,82.24 420.90,98.00
+                            415.61,105.97 402.14,118.86 395.00,126.00
+                            395.00,126.00 365.00,156.00 365.00,156.00
+                            365.00,156.00 336.00,185.00 336.00,185.00
+                            333.51,187.49 327.62,194.24 324.17,194.43
+                            321.14,194.60 314.63,187.13 312.37,184.87
+                            312.37,184.87 281.54,154.12 281.54,154.12
+                            281.54,154.12 249.00,122.00 249.00,122.00
+                            237.69,110.69 228.00,101.94 221.31,87.00
+                            216.54,76.35 216.87,68.26 217.00,57.00
+                            217.08,50.67 218.28,46.91 220.34,41.00
+                            228.27,18.33 246.93,4.70 270.00,0.44 Z
+                        M 486.00,0.44
+                        C 498.19,-1.12 510.75,0.24 522.00,5.31
+                            522.00,5.31 540.00,15.42 540.00,15.42
+                            542.70,15.48 546.70,11.90 549.00,10.36
+                            553.77,7.17 558.53,4.77 564.00,3.03
+                            590.09,-5.27 618.66,2.70 635.24,25.00
+                            638.94,29.97 642.08,36.15 644.14,42.00
+                            650.42,59.92 647.36,82.24 636.90,98.00
+                            631.61,105.97 618.14,118.86 611.00,126.00
+                            611.00,126.00 581.00,156.00 581.00,156.00
+                            581.00,156.00 552.00,185.00 552.00,185.00
+                            549.51,187.49 543.62,194.24 540.17,194.43
+                            537.14,194.60 530.63,187.13 528.37,184.87
+                            528.37,184.87 497.54,154.12 497.54,154.12
+                            497.54,154.12 465.00,122.00 465.00,122.00
+                            453.69,110.69 444.00,101.94 437.31,87.00
+                            432.54,76.35 432.87,68.26 433.00,57.00
+                            433.08,50.67 434.28,46.91 436.34,41.00
+                            444.27,18.33 462.93,4.70 486.00,0.44 Z
+                        M 702.00,0.44
+                        C 714.19,-1.12 726.75,0.24 738.00,5.31
+                            738.00,5.31 756.00,15.42 756.00,15.42
+                            758.70,15.48 762.70,11.90 765.00,10.36
+                            769.77,7.17 774.53,4.77 780.00,3.03
+                            806.09,-5.27 834.66,2.70 851.24,25.00
+                            854.94,29.97 858.08,36.15 860.14,42.00
+                            866.42,59.92 863.36,82.24 852.90,98.00
+                            847.61,105.97 834.14,118.86 827.00,126.00
+                            827.00,126.00 797.00,156.00 797.00,156.00
+                            797.00,156.00 768.00,185.00 768.00,185.00
+                            765.51,187.49 759.62,194.24 756.17,194.43
+                            753.14,194.60 746.63,187.13 744.37,184.87
+                            744.37,184.87 713.54,154.12 713.54,154.12
+                            713.54,154.12 681.00,122.00 681.00,122.00
+                            669.69,110.69 660.00,101.94 653.31,87.00
+                            648.54,76.35 648.87,68.26 649.00,57.00
+                            649.08,50.67 650.28,46.91 652.34,41.00
+                            660.27,18.33 678.93,4.70 702.00,0.44 Z
+                        M 973.00,18.00
+                        C 977.62,12.77 983.72,8.78 990.00,5.78
+                            1016.40,-6.82 1048.49,1.11 1066.48,24.00
+                            1077.65,38.20 1079.20,50.73 1079.00,68.00
+                            1078.67,95.68 1053.00,116.00 1035.00,134.00
+                            1035.00,134.00 990.01,178.91 990.01,178.91
+                            987.06,181.73 975.95,193.73 973.00,194.19
+                            970.17,194.62 963.60,186.98 961.42,184.87
+                            961.42,184.87 929.87,153.37 929.87,153.37
+                            929.87,153.37 899.72,123.42 899.72,123.42
+                            887.88,111.82 875.66,100.84 869.46,85.00
+                            865.50,74.88 865.88,67.53 866.00,57.00
+                            866.08,50.90 867.07,47.71 869.00,42.00
+                            877.20,17.80 900.26,0.30 926.00,0.00
+                            946.53,-0.24 957.32,5.27 973.00,18.00 Z" />
+                </svg>
+                </div>
+            </div>
+        </div>
+        <div id="arena" class="col position-relative p-0" style="height: 100%; width: 100%;">
+            <!-- Objetos móveis -->
+            <div id="objeto1" class="objeto"></div>
+            <div id="objeto2" class="objeto"></div>
+        </div>
+    </div>
+
+    <div class="position-absolute" style="height: 80vh">
+
+    </div>    
+  </section>
+
+  <footer class="footer navbar-fixed-bottom border-top bg-dark">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-12 col-md-4 text-center text-light text-md-left">
+          &copy; 2023 - The Goats
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Proteção do Consumidor</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Art. 8º. Os produtos e serviços colocados no mercado de consumo não acarretarão riscos à saúde ou segurança dos consumidores, exceto os considerados normais e previsíveis em decorrência de sua natureza e fruição, obrigando-se os fornecedores, em qualquer hipótese, a dar as informações necessárias e adequadas a seu respeito.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="col-5 btn" style="background-color: #6610F2BC;" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Ir para Art. 12º e 14º</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Responsabilidade Objetiva do Fornecedor</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Art. 12º. e 14º. do Código de Defesa do Consumidor estabelecem a responsabilidade objetiva do fornecedor, cabendo ao consumidor a demonstração do dano (material e/ou moral), do nexo de causalidade entre esse e o vício do produto/serviço, independente da existência de culpa, sendo que, quanto aos danos morais, o prejuízo imaterial é uma decorrência natural da violação do direito da personalidade ou da prática do ato ilícito.”</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="col-5 btn" style="background-color: #6610F2BC;" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ir para Art. 8º</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="text-decoration-none border-0 text-light bg-transparent" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Código do Consumidor</button>
+        </div>
+        <div class="col-12 col-md-4 text-center text-light text-md-right">
+          <a href="../trabalheconosco/trabalheconosco.html" class="text-decoration-none text-light">Junte-se a nós</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

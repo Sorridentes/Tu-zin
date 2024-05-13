@@ -54,8 +54,8 @@
             <p style="font-family: Tahoma, Geneva, Verdana, sans-serif;"><a href="../formulario/formulario.html" class="btn btn-success">Descubra mais registrando-se no nosso banco de dados</a></p>
             <div class="container">
               <h2>Equipe</h2>
-              <div class="row align-items-center justify-content-between">
-                <div class="col-md-auto my-5 ms-1">
+              <div class="row mx-auto align-items-center justify-content-between">
+                <div class="col my-5 ms-1">
                   <div class="cartao">
                     <div class="cara img-box" >
                         <img src="../../imagens/rodrigo.png" class="w-75" alt="foto do Rodrigo">
@@ -67,7 +67,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-auto my-5 ms-1">
+                <div class="col my-5 ms-1">
                   <div class="cartao">
                     <div class="cara img-box" >
                         <img src="../../imagens/thiago.png" class="w-75" alt="foto do Thiago">
@@ -79,7 +79,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-auto my-5">
+                <div class="col-6 my-5">
                   <div class="cartao">
                     <div class="cara img-box" >
                         <img src="../../imagens/felipe.png" class="w-75" alt="foto do Felipe">
@@ -91,22 +91,66 @@
                     </div>
                   </div>
                 </div>
+                <div class="col my-5">
+                  <div class="cartao">
+                    <div class="cara img-box" >
+                        <img src="../../imagens/samuel.png" class="w-75" alt="foto do Samuel">
+                    </div>
+                    <div class="cara txt-box">
+                      <h5 class="card-title">Samuel</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Gerente de pós-vendas</h6>
+                      <p class="card-text text-center" style="font-size: 15px;">jovem talentoso de 19 anos, especializado em eletrônica. Ele é técnico em eletrônica e especialista em soldagem, além de estar cursando Bacharelado em Sistemas de Informação.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
       </div>        
   </section>
 
-  <footer class="footer navbar-fixed-bottom border-top text-light bg-dark">
+  <footer class="footer navbar-fixed-bottom border-top bg-dark">
     <div class="container">
       <div class="row py-3">
-        <div class="col-12 col-md-4 text-center text-md-left">
+        <div class="col-12 col-md-4 text-center text-light text-md-left">
           &copy; 2023 - The Goats
         </div>
         <div class="col-12 col-md-4 text-center">
-          <a href="../manual/manual.html" class="text-decoration-none text-light">Política de Privacidade</a>
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Proteção do Consumidor</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Art. 8º. Os produtos e serviços colocados no mercado de consumo não acarretarão riscos à saúde ou segurança dos consumidores, exceto os considerados normais e previsíveis em decorrência de sua natureza e fruição, obrigando-se os fornecedores, em qualquer hipótese, a dar as informações necessárias e adequadas a seu respeito.</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="col-5 btn" style="background-color: #6610F2BC;" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Ir para Art. 12º e 14º</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Responsabilidade Objetiva do Fornecedor</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Art. 12º. e 14º. do Código de Defesa do Consumidor estabelecem a responsabilidade objetiva do fornecedor, cabendo ao consumidor a demonstração do dano (material e/ou moral), do nexo de causalidade entre esse e o vício do produto/serviço, independente da existência de culpa, sendo que, quanto aos danos morais, o prejuízo imaterial é uma decorrência natural da violação do direito da personalidade ou da prática do ato ilícito.”</p>
+                </div>
+                <div class="modal-footer">
+                  <button class="col-5 btn" style="background-color: #6610F2BC;" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ir para Art. 8º</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="text-decoration-none border-0 text-light bg-transparent" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Código do Consumidor</button>
         </div>
-        <div class="col-12 col-md-4 text-center text-md-right">
+        <div class="col-12 col-md-4 text-center text-light text-md-right">
           <a href="../trabalheconosco/trabalheconosco.html" class="text-decoration-none text-light">Junte-se a nós</a>
         </div>
       </div>

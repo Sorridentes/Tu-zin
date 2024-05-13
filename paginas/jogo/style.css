@@ -1,0 +1,18 @@
+  /* Estilos para os objetos móveis */
+  .objeto {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #objeto1 {
+    background-image: url("../../imagens/tuezinRobo.png");
+  }
+  #objeto2 {
+    background-image: url("../../imagens/RobotoRobo.png");
+  }
+  
+  .vida{
+    transition: 0.4s;
+  }
